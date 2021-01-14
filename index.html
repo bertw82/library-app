@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<head>
+  <title>Library Practice Session</title>
+  <script src = "js/book.js"></script>
+  <script src = "js/patron.js"></script>
+  <script src = "js/library.js"></script>
+</head>
+
+<body>
+  <h1>Library Practice Session Project</h1>
+  <h5>Right click and use the developer tools to see the console.</h5>
+</body>
+
+<script>
+  // our test code here
+
+const library = new Library();
+ 
+  const book = new Book('Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', '978-0439708180');
+  const patron = new Patron('Bert', 'bert@email.com');
+ 
+  library.addBook(book);
+  library.addPatron(patron);
+  patron.checkOut(book);
+  patron.returnBook(book);
+  console.dir(patron);
+  console.dir(book);
+  
+</script>
+
+
+
